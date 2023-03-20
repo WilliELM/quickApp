@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">STØ</string>
     <string name="indtast_dine_indt_tger">Indtast dine indtætger</string>
+    <string name="kr_su">Kr. SU</string>
+    <string name="kr_studiejob_el_andet">Kr. Studiejob el. andet</string>
+    <string name="submit">SUBMIT</string>
 </resources>
