@@ -18,7 +18,7 @@ public class IncomeActivity extends AppCompatActivity {
     }
 
 
-    public void onClick3(View view){
+    public void forwardToBudget(View view){
         EditText newEdit1 = findViewById(R.id.editTextTextPersonName3);
         EditText newEdit2 = findViewById(R.id.editTextTextPersonName6);
 
