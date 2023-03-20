@@ -24,8 +24,10 @@ public class BudgetActivity extends AppCompatActivity {
         Integer sumOfTotal = (incomeTotal - outcomeTotal);
 
         TextView greenOrRedWord = findViewById(R.id.textView5);
+        TextView sumText = findViewById(R.id.textView4);
 
-        greenOrRedWord.setText("Summen af dine udgifter og indtægter:" + sumOfTotal);
+        sumText.setText("Summen af dine udgifter og indtægter:");
+        greenOrRedWord.setText(sumOfTotal);
 
         greenOrRedNumbers(sumOfTotal);
     }
