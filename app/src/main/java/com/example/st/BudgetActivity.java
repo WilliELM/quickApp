@@ -28,7 +28,6 @@ public class BudgetActivity extends AppCompatActivity {
         TextView greenOrRedWord = findViewById(R.id.textView5);
         TextView sumText = findViewById(R.id.textView4);
 
-        sumText.setText("Summen af dine udgifter og indtægter:");
         greenOrRedWord.setText(Integer.toString(sumOfTotal));
 
         greenOrRedNumbers(sumOfTotal);

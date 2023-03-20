@@ -27,7 +27,7 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Du har: "
+            android:text="Summen af dine udgifter og indtægter: "
             android:gravity="center"/>
 
         <TextView
@@ -38,11 +38,6 @@
             android:text="TextView"
             android:gravity="center"/>
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=" til rådighed, hver måned." />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
