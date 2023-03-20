@@ -19,8 +19,8 @@ public class IncomeActivity extends AppCompatActivity {
 
 
     public void onClick3(View view){
-        EditText newEdit1 = findViewById(R.id.editTextNumberDecimal4);
-        EditText newEdit2 = findViewById(R.id.editTextNumberDecimal5);
+        EditText newEdit1 = findViewById(R.id.editTextTextPersonName3);
+        EditText newEdit2 = findViewById(R.id.editTextTextPersonName6);
 
         String valueEdit1 = newEdit1.getText().toString();
         String valueEdit2 = newEdit2.getText().toString();
