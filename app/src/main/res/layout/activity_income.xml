@@ -17,7 +17,7 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -46,7 +46,7 @@
         android:layout_marginTop="106dp"
         android:layout_marginEnd="144dp"
         android:layout_marginBottom="532dp"
-        android:text="@string/kr_su"
+        android:text="Kr. SU"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -60,10 +60,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.199"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="274dp" />
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="276dp" />
 
     <TextView
         android:id="@+id/studyjob_crown"
@@ -73,7 +71,7 @@
         android:layout_marginTop="101dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="412dp"
-        android:text="@string/kr_studiejob_el_andet"
+        android:text="Kr. Studiejob el. andet"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -82,15 +80,15 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:onClick="button_income"
         android:id="@+id/button_income"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginTop="134dp"
-        android:layout_marginEnd="135dp"
+        android:layout_marginEnd="150dp"
         android:layout_marginBottom="228dp"
-        android:text="@string/submit"
+        android:text="SUBMIT"
+        android:onClick="onClick3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
