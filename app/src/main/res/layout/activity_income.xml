@@ -26,9 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginEnd="150dp"
-        android:layout_marginBottom="228dp"
-        android:text="SUBMIT"
         android:onClick="forwardToBudget"
+        android:text="SUBMIT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -37,15 +36,16 @@
         android:layout_width="409dp"
         android:layout_height="356dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="98dp">
+        app:layout_constraintBottom_toTopOf="@+id/button_income"
+        app:layout_constraintTop_toBottomOf="@+id/income_title"
+        tools:layout_editor_absoluteX="1dp">
 
         <TextView
             android:id="@+id/textView14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nedenunder kan du skrive din SU og øvrig løn"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:text="Nedenunder kan du skrive din SU og øvrig løn" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -63,8 +63,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="SU" />
+                    android:hint="SU"
+                    android:inputType="textPersonName" />
 
                 <EditText
                     android:id="@+id/editTextTextPersonName6"
@@ -72,8 +72,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="Øvrig løn" />
+                    android:hint="Øvrig løn"
+                    android:inputType="textPersonName" />
             </LinearLayout>
         </LinearLayout>
 
