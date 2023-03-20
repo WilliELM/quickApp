@@ -8,6 +8,8 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class BudgetActivity extends AppCompatActivity {
 
 
@@ -17,17 +19,17 @@ public class BudgetActivity extends AppCompatActivity {
         setContentView(R.layout.activity_budget);
 
         Intent intentFromIncome = getIntent();
+        ArrayList <Integer> finalArraylist = intentFromIncome.getIntegerArrayListExtra("arraylist2");
+        int incomeTotal = finalArraylist.get(4) + finalArraylist.get(5);
+        int outcomeTotal = finalArraylist.get(0) + finalArraylist.get(1) + finalArraylist.get(2) + finalArraylist.get(3);
 
-        Integer incomeTotal = intentFromIncome.getIntExtra("x", 2);
-        Integer outcomeTotal = intentFromIncome.getIntExtra("x", 2);
-
-        Integer sumOfTotal = (incomeTotal - outcomeTotal);
+        int sumOfTotal = (incomeTotal - outcomeTotal);
 
         TextView greenOrRedWord = findViewById(R.id.textView5);
         TextView sumText = findViewById(R.id.textView4);
 
         sumText.setText("Summen af dine udgifter og indtægter:");
-        greenOrRedWord.setText(sumOfTotal);
+        greenOrRedWord.setText(Integer.toString(sumOfTotal));
 
         greenOrRedNumbers(sumOfTotal);
     }

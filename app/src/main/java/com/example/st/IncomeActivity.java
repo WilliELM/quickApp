@@ -32,7 +32,7 @@ public class IncomeActivity extends AppCompatActivity {
         nmsArr = intentFromUdgifter.getIntegerArrayListExtra("arraylist");
         nmsArr.add(Integer.parseInt(valueEdit1));
         nmsArr.add(Integer.parseInt(valueEdit2));
-        newIntent3.putExtra("arraylist",nmsArr);
+        newIntent3.putExtra("arraylist2",nmsArr);
         startActivity(newIntent3);
 
     }
