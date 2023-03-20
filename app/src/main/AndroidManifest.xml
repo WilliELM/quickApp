@@ -12,8 +12,15 @@
         android:theme="@style/Theme.STØ"
         tools:targetApi="31">
         <activity
+            android:name=".UdgifterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".IncomeActivity"
+            android:exported="true"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
