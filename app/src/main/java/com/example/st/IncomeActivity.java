@@ -28,9 +28,11 @@ public class IncomeActivity extends AppCompatActivity {
         Intent newIntent3 = new Intent(this, BudgetActivity.class);
 
         Intent intentFromUdgifter = getIntent();
-        ArrayList <Integer> nmsArr = intentFromUdgifter.getIntegerArrayListExtra("arraylist");
+        ArrayList <Integer> nmsArr = new ArrayList<>();
+        nmsArr = intentFromUdgifter.getIntegerArrayListExtra("arraylist");
         nmsArr.add(Integer.parseInt(valueEdit1));
         nmsArr.add(Integer.parseInt(valueEdit2));
+        newIntent3.putExtra("arraylist",nmsArr);
         startActivity(newIntent3);
 
     }
