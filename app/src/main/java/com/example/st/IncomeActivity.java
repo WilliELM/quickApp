@@ -18,20 +18,22 @@ public class IncomeActivity extends AppCompatActivity {
     }
 
 
-    public void onClick3(View view){
+    public void forwardToBudget(View view){
         EditText newEdit1 = findViewById(R.id.editTextNumberDecimal4);
         EditText newEdit2 = findViewById(R.id.editTextNumberDecimal5);
 
         String valueEdit1 = newEdit1.getText().toString();
         String valueEdit2 = newEdit2.getText().toString();
 
-        Intent newIntent3 = new Intent(this, BudgetActivity.class);
+        Intent newIntent = new Intent(this, BudgetActivity.class);
 
         Intent intentFromUdgifter = getIntent();
         ArrayList <Integer> nmsArr = intentFromUdgifter.getIntegerArrayListExtra("arraylist");
         nmsArr.add(Integer.parseInt(valueEdit1));
         nmsArr.add(Integer.parseInt(valueEdit2));
-        startActivity(newIntent3);
+        newIntent.putExtra("allNumsArray", nmsArr);
+        System.out.println(nmsArr);
+        startActivity(newIntent);
 
     }
 }
